@@ -21,6 +21,17 @@
     <groupId>io.zipkin.java</groupId>
     <artifactId>zipkin-autoconfigure</artifactId>
     <version>2.12.9</version>
+   
+    
+    <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-autoconfigure</artifactId>
+          </exclusion>
+        </exclusions>
+    
   </parent>
 
   <artifactId>zipkin-autoconfigure-collector-kafka</artifactId>
